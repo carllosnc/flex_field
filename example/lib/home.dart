@@ -27,6 +27,8 @@ class _HomeState extends State<Home> {
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
+            Text("This is a simple item"),
+
             TextFormField(
               maxLength: 20,
               controller: controller1,
@@ -79,7 +81,7 @@ class _HomeState extends State<Home> {
                 suffixIcon: Icon(Icons.person),
               ),
               onChanged: (value) {
-                controller1.text = value;
+                controller2.text = value;
               },
             ).flex(
               name: "Name",
